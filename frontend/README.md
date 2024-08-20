@@ -21,17 +21,17 @@
 19. Upload product API👩‍🍳
 20. getProductController👩‍🍳 to display on Homepage
 21. Edit product details (Admin)
-22. Add currency helper
-23. Upload all products
+22. Add PKR currency helper
+23. Upload all products on Cloudinary
 24. Banner / Upload products
 25. HorizontalCardProduct.js / VerticalCardProduct.js components for HomePage
 26. ProductDetails.js page / skeleton for loading state.
 27. CategoryWiseProductDisplay component for recommended products.
 28. Cart model
-29. addToCartController
+29. addToCartController 👩‍🍳
 30. handleAddToCart buttons functionality(vertical & hor)
 31. Cart Screen
-32. updateCartCount (+ / -)/ deleteCartCount controllers for Cart Screen
+32. updateCartCount (+ / -)/ deleteCartCount controllers for Cart Screen 👩‍🍳
 
 14.05.24
 14.46.44

@@ -11,7 +11,7 @@ const updateCartCount = async (req, res) => {
         ...(qty && { quantity: qty }),
       }
     );
-    res.status(204).json({
+    res.status(200).json({
       message: "Quantity updated",
       data: updateCart,
       success: true,

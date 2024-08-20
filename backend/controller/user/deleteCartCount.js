@@ -6,7 +6,7 @@ const deleteCartCount = async (req, res) => {
     const deleteCart = await addToCartModel.deleteOne({
       _id: addToCartProductId,
     });
-    res.status(204).json({
+    res.status(200).json({
       message: "Product deleted from the cart",
       data: deleteCart,
       success: true,

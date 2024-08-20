@@ -63,6 +63,26 @@ const Cart = () => {
       fetchData();
     }
   };
+  const deleteCartProduct = async (id) => {
+    //deleteCartCount controller
+    const response = await fetch(SummaryApi.deleteCartCount.url, {
+      method: SummaryApi.deleteCartCount.method,
+      credentials: "include",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        _id: id,
+      }),
+    });
+    //updateCartCount controller
+    const responseData = await response.json();
+    if (responseData.success) {
+      fetchData();
+      context.fetchUserAddToCart();
+    }
+  };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -100,7 +120,10 @@ const Cart = () => {
                     </div>
                     <div className="px-4 py-2 relative">
                       {/*** Delete product from the Cart*/}
-                      <div className="absolute right-0 text-red-600 rounded-full p-2 hover:bg-red-600 hover:text-white cursor-pointer">
+                      <div
+                        className="absolute right-0 text-red-600 rounded-full p-2 hover:bg-red-600 hover:text-white cursor-pointer"
+                        onClick={() => deleteCartProduct(product?._id)}
+                      >
                         <RiDeleteBin6Line />
                       </div>
                       <h2 className="text-lg lg:text xl text-ellipsis line-clamp-1">

@@ -5,6 +5,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import addToCart from "../helpers/addToCart";
 import Context from "../context";
+import scrollTop from "../helpers/scrollTop";
 
 const CategroyWiseProductDisplay = ({ category, heading }) => {
   const [data, setData] = useState([]);
@@ -57,7 +58,7 @@ const CategroyWiseProductDisplay = ({ category, heading }) => {
                 <Link
                   to={"/product/" + product?._id}
                   className="w-full min-w-[280px]  md:min-w-[320px] max-w-[280px] md:max-w-[320px]  bg-white rounded-sm shadow "
-                  // onClick={scrollTop}
+                  onClick={scrollTop}
                 >
                   <div className="bg-slate-200 h-48 p-4 min-w-[280px] md:min-w-[145px] flex justify-center items-center">
                     <img

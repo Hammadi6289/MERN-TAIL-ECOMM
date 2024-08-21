@@ -83,6 +83,15 @@ const Cart = () => {
     }
   };
 
+  const totalQty = data.reduce(
+    (previousValue, currentValue) => previousValue + currentValue.quantity,
+    0
+  );
+  const totalPrice = data.reduce(
+    (preve, curr) => preve + curr.quantity * curr?.productId?.sellingPrice,
+    0
+  );
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -171,7 +180,22 @@ const Cart = () => {
           {loading ? (
             <div className="h-36 bg-slate-200 border border-slate-300 animate-pulse"></div>
           ) : (
-            <div className="h-36 bg-slate-200">SubTotal</div>
+            <div className="h-36 bg-white">
+              <h2 className="text-white bg-red-600 px-4 py-1">Sub Total</h2>
+              <div className="flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600">
+                <p>Quantity</p>
+                <p>{totalQty}</p>
+              </div>
+
+              <div className="flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600">
+                <p>Total Price</p>
+                <p>{displayPKRCurrency(totalPrice)}</p>
+              </div>
+
+              <button className="bg-blue-600 p-4 text-white w-full mt-2">
+                Pay Now
+              </button>
+            </div>
           )}
         </div>
       </div>

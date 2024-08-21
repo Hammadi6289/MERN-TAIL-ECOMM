@@ -32,7 +32,5 @@
 30. handleAddToCart buttons functionality(vertical & hor)
 31. Cart Screen
 32. updateCartCount (+ / -)/ deleteCartCount controllers for Cart Screen 👩‍🍳
-
-14.05.24
-14.46.44
-target 15.30.00
+33. Search Bar functionality. (Controller in BE approach)
+34. Category section

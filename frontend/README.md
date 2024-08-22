@@ -33,4 +33,4 @@
 31. Cart Screen
 32. updateCartCount (+ / -)/ deleteCartCount controllers for Cart Screen 👩‍🍳
 33. Search Bar functionality. (Controller in BE approach)
-34. Category section
+34. Category section. (Sort / Filter)

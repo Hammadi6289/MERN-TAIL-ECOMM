@@ -34,3 +34,15 @@
 32. updateCartCount (+ / -)/ deleteCartCount controllers for Cart Screen 👩‍🍳
 33. Search Bar functionality. (Controller in BE approach)
 34. Category section. (Sort / Filter)
+
+
+![1](https://github.com/user-attachments/assets/17660b03-c2d3-4317-8304-c6bd9e2d75a3)
+
+![2](https://github.com/user-attachments/assets/385e2218-5a96-46b7-a6f0-a2e9085f6913)
+
+![login](https://github.com/user-attachments/assets/7078ae84-4505-48bb-9851-394016e826f4)
+
+![all products](https://github.com/user-attachments/assets/3a01e375-e22b-4b53-9f29-e5f52ad483b0)
+
+![3](https://github.com/user-attachments/assets/cb2a43f7-3a72-4555-b4a1-25d410b1f03b)
+

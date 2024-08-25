@@ -32,5 +32,11 @@
 30. handleAddToCart buttons functionality(vertical & hor)
 31. Cart Screen
 32. updateCartCount (+ / -)/ deleteCartCount controllers for Cart Screen 👩‍🍳
-33. Search Bar functionality. (Controller in BE approach)
+33. Search Bar functionality. (Controller in BE approach)👩‍🍳
 34. Category section. (Sort / Filter)
+35. Stripe account
+36. Npm i stripe in BE
+37. Stripe Controller in BE. 👩‍🍳
+38. npm i stripe in FE and add frontend design for stripe.
+39. Success and Cancelled pages for stripe.
+40. Order page.

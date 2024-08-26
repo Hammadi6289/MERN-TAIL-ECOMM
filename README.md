@@ -40,3 +40,5 @@
 38. npm i stripe in FE and add frontend design for stripe.
 39. Success and Cancelled pages for stripe.
 40. Order page.
+
+1.25.25

@@ -6,7 +6,7 @@ const paymentController = async (request, response) => {
     const { cartItems } = request.body;
     console.log("cartItems", cartItems);
     const user = await userModel.findOne({ _id: request.userId });
-    console.log("userID", user);
+    // console.log("userID", user);
     const params = {
       submit_type: "pay",
       mode: "payment",
@@ -18,8 +18,9 @@ const paymentController = async (request, response) => {
         },
       ],
       customer_email: user.email,
-      //line_items: cartItems.map((item, index) => {
-      // const price = item.productId.sellingPrice;
+      metadata: {
+        userId: request.userId,
+      },
       line_items: cartItems.map((item) => {
         const price = item.productId.sellingPrice;
         const images = item.productId.productImage.filter((img) => img); // Filter out empty strings, null, or undefined values
